@@ -33,13 +33,21 @@ void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
 /**
- * selection_sort - Sorts an array of integers in ascending order
- *                  using the Selection sort algorithm.
+ * swap_ints - Swap two integers in an array.
  *
- * @array: The array to be sorted
- * @size: Number of elements in @array
+ * @a: The first integer to swap.
+ * @b: The second integer to swap.
+ */
+void swap_ints(int *a, int *b);
+
+/**
+ * selection_sort - Sort an array of integers in ascending order
+ *                  using the selection sort algorithm.
  *
- * Description: Prints the array after each time you swap two elements.
+ * @array: An array of integers.
+ * @size: The size of the array.
+ *
+ * Description: Prints the array after each swap.
  */
 void selection_sort(int *array, size_t size);
 
