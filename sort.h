@@ -2,6 +2,7 @@
 #define SORT_H
 
 #include <stddef.h>
+#include <stdbool.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -41,9 +42,18 @@ void print_list(const listint_t *list);
 void swap_ints(int *a, int *b);
 
 /**
- * lomuto_partition - Order a subset of an array of integers according to
- *                    the lomuto partition scheme (last element as pivot).
+ * bubble_sort - Sort an array of integers in ascending order.
  *
+ * @array: An array of integers to sort.
+ * @size: The size of the array.
+ *
+ * Description: Prints the array after each swap.
+ */
+void bubble_sort(int *array, size_t size);
+
+/**
+ * lomuto_partition - Order a subset of an array of integers according to
+ *                    the Lomuto partition scheme (last element as pivot).
  * @array: The array of integers.
  * @size: The size of the array.
  * @left: The starting index of the subset to order.
@@ -55,7 +65,6 @@ int lomuto_partition(int *array, size_t size, int left, int right);
 
 /**
  * lomuto_sort - Implement the quicksort algorithm through recursion.
- *
  * @array: An array of integers to sort.
  * @size: The size of the array.
  * @left: The starting index of the array partition to order.
@@ -66,9 +75,8 @@ int lomuto_partition(int *array, size_t size, int left, int right);
 void lomuto_sort(int *array, size_t size, int left, int right);
 
 /**
- * quick_sort - Sort an array of integers in ascending order
- *              using the quicksort algorithm.
- *
+ * quick_sort - Sort an array of integers in ascending
+ *              order using the quicksort algorithm.
  * @array: An array of integers.
  * @size: The size of the array.
  *
