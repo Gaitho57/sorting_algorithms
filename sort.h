@@ -33,12 +33,22 @@ void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
 /**
- * bubble_sort - Sorts an array of integers using bubble sort algorithm
+ * swap_nodes - Swap two nodes in a listint_t doubly-linked list.
  *
- * @array: The array to be sorted
- * @size: Number of elements in @array
+ * @h: A pointer to the head of the doubly-linked list.
+ * @n1: A pointer to the first node to swap.
+ * @n2: The second node to swap.
  */
-void bubble_sort(int *array, size_t size);
+void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2);
+
+/**
+ * insertion_sort_list - Sorts a doubly linked list of integers
+ *                       using the insertion sort algorithm.
+ *
+ * @list: A pointer to the head of a doubly-linked list of integers.
+ *
+ * Description: Prints the list after each swap.
+ */
+void insertion_sort_list(listint_t **list);
 
 #endif /* SORT_H */
-
