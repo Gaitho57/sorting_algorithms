@@ -61,6 +61,15 @@ void bubble_sort(int *array, size_t size);
 void selection_sort(int *array, size_t size);
 
 /**
+ * insertion_sort_list - Sorts a doubly linked list of integers in ascending order
+ *                       using the insertion sort algorithm.
+ * @list: A pointer to the head of a doubly-linked list of integers.
+ *
+ * Description: Prints the list after each swap.
+ */
+void insertion_sort_list(listint_t **list);
+
+/**
  * quick_sort - Sort an array of integers in ascending
  *              order using the quicksort algorithm.
  * @array: An array of integers.
