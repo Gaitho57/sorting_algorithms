@@ -60,4 +60,15 @@ void bubble_sort(int *array, size_t size);
  */
 void selection_sort(int *array, size_t size);
 
+/**
+ * quick_sort - Sort an array of integers in ascending
+ *              order using the quicksort algorithm.
+ * @array: An array of integers.
+ * @size: The size of the array.
+ *
+ * Description: Uses the Lomuto partition scheme. Prints
+ *              the array after each swap of two elements.
+ */
+void quick_sort(int *array, size_t size);
+
 #endif /* SORT_H */
